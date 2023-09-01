@@ -1,0 +1,592 @@
+body {
+    background-color: #e0dedc;
+    margin: 0;
+    max-width: 100%;
+    font-family: 'Figtree', sans-serif;
+    color: #5d5648;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+main {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 200px;
+    padding: 0px 10px 10px 10px;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    position: relative;
+    align-items: center;
+    padding: 30px 70px;
+}
+
+.header-div {
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.header-option-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-options {
+    color: #5d5648;
+    width: 100px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.header-options:hover {
+    color: black;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 600;
+}
+
+hr {
+    border-top: 1px dotted #5d5648;
+    ;
+}
+
+.slider {
+    height: auto;
+    max-width: 84%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+
+}
+
+.slider .slider-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: rgb(186, 218, 207);
+    width: 200px;
+    height: 270px;
+    transition: background-color 0.3s ease;
+
+}
+
+.skill-items {
+    max-width: 84%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+
+}
+
+.skill-items div {
+    background-color: rgb(186, 218, 207);
+    border-radius: 18px;
+    box-sizing: border-box;
+    padding: 3px 15px;
+    gap: 10px;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.skill-items div label {
+    font-weight: 800;
+    background: none;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+
+}
+
+.remove-skill {
+    width: 30px;
+    height: 30px;
+}
+
+.remove-skill:hover {
+    scale: 1.1;
+    cursor: pointer;
+
+}
+
+#add-skill-label:hover {
+    cursor: pointer;
+    scale: 1.1;
+}
+
+.add-skill:focus {
+    cursor: text;
+}
+
+.slider-item:hover {
+    background-color: rgb(163, 193, 183);
+}
+
+.slider .slider-item img {
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
+}
+
+.slider-item h3 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-bg {
+    width: 200px;
+    height: 270px;
+    position: relative;
+    cursor: pointer;
+}
+
+.slider-bg .remove-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    right: 10px;
+    border: 0;
+    background-color: rgb(161, 39, 39);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.slider-bg .edit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 30px;
+    left: 55%;
+    height: 30px;
+    top: 3%;
+    border: 0;
+    background-color: rgb(47, 47, 163);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.slider-bg .remove-btn:hover {
+    background-color: rgb(248, 20, 20);
+}
+
+.slider-bg .edit-btn:hover {
+    background-color: rgb(19, 19, 245);
+
+}
+
+.item-options {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    width: 100%;
+    position: absolute;
+    padding: 5px;
+    gap: 5px;
+    box-sizing: border-box;
+}
+
+.item-options img {
+    width: 18px;
+    height: 18px;
+}
+
+.add-new-item {
+    border-radius: 10px;
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    bottom: 0%;
+    background-color: #c0bdb8;
+}
+
+footer {
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-weight: 900;
+    font-size: large;
+}
+
+a {
+    color: beige;
+}
+
+#details {
+    width: 58%;
+    display: inline-block;
+}
+
+#heading {
+    text-align: center;
+    margin-top: -15px;
+    font-weight: 300;
+}
+
+#picture {
+    width: 25%;
+    margin-left: 1%;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    vertical-align: top;
+}
+
+#picture #person {
+    border: 15px solid #c0bdb8;
+}
+
+.inline-div {
+    display: inline-block;
+}
+
+#img-linkedin:hover {
+    scale: 1.2;
+}
+
+.signup-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.product-modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    padding: 20px;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    scale: 0.75;
+}
+
+.product-content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 45px;
+    padding: 40px;
+    width: 400px;
+    height: auto;
+    overflow-y: auto;
+    background-color: white;
+    border-radius: 10px;
+    max-width: 400px;
+    max-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.input-field {
+    display: block;
+    width: 90%;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(168, 190, 174);
+    outline: none;
+    padding: 5px;
+    font-size: medium;
+}
+
+#submit {
+    position: fixed;
+    display: inline-block;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(168, 190, 174), rgb(178, 178, 179));
+    border-color: transparent;
+    box-shadow: 5px 5px 5px rgb(205, 205, 207);
+    font-weight: 700;
+    font-size: large;
+
+
+}
+
+#submit:hover {
+    background: linear-gradient(90deg, rgb(174, 206, 182), rgb(202, 202, 212));
+}
+
+#submit:active {
+    background: linear-gradient(90deg, rgb(168, 190, 174), rgb(178, 178, 179));
+
+}
+
+.edit-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.input-section {
+    background-color: white;
+    padding: 20px;
+    min-width: 500px;
+    min-height: 400px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.edit-image {
+    max-width: 110px;
+    height: 110px;
+}
+
+.edit-title {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.edit-description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+#submit-edit-info {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(168, 190, 174), rgb(178, 178, 179));
+    border-color: transparent;
+    box-shadow: 5px 5px 5px rgb(205, 205, 207);
+    font-weight: 700;
+    font-size: large;
+
+
+}
+
+#submit-edit-info:hover {
+    background: linear-gradient(90deg, rgb(174, 206, 182), rgb(202, 202, 212));
+}
+
+#submit-edit-info:active {
+    background: linear-gradient(90deg, rgb(168, 190, 174), rgb(178, 178, 179));
+
+}
+
+.services-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills-div.skill-items ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add-skill-item {
+    box-sizing: border-box;
+    margin-left: 40px;
+    height: 40px;
+}
+
+
+.skills-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-div h1,
+.skills-div h1,
+.external-data-div h1 {
+    height: auto;
+    width: 84%;
+    margin-top: 70px;
+}
+
+.title-skill {
+    max-width: 500px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 5px;
+
+}
+
+#edit-modal-alert {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.alert-modal {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.external-data-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-table {
+    background-color: transparent;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+.table-container {
+    width: 70%;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: auto;
+    display: block;
+
+}
+
+.info-table td,
+th {
+    background-color: #c0bbb2;
+    gap: 10px;
+}
+
+.info-table caption {
+    background-color: #5d5648;
+    color: white;
+    font: bold small-caps 30px 'Figtree';
+    padding: 10px;
+    margin: 50px 0px 20px 0px;
+}
+
+.image-id-cell {
+    width: 70px;
+    text-align: center;
+}
+
+.url-cell:hover {
+    color: blue;
+    cursor: pointer;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner {
+    width: 30px;
+    height: 30px;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left-color: #333;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+    display: none;
+
+}
+
+#search-dropdown {
+    position: absolute;
+    z-index: 100;
+    width: 700px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: #adacac;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px rgb(205, 205, 207);
+
+}
+
+#product-description {
+    white-space: pre-line;
+}

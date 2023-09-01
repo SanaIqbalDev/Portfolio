@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sana Iqbal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="js/portfolio-main.js"></script>
+  <script src="js/portfolio-skills.js"></script>
+  <script src="js/portfolio-form-submission.js"></script>
+  <script src="js/portfolio.external-data.js"></script>
+</head>
+
+<body>
+  <header>
+
+    <div class="header-div">
+      <img width="50px" height="50px" src="res/ic_login.png">
+      <h1 style="font-weight: 800;">&nbspSana&nbsp</h1>
+      <h1 style="font-weight: 300;">Iqbal</h1>
+    </div>
+
+    <div class="header-option-section">
+
+      <h3 id="skillset" class="header-options">Skills</h3>
+      <h3 id="services" class="header-options">Services</h3>
+      <h3 id="signup" class="header-options">Sign Up</h3>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-content">
+      <div class="top-row"
+        style="width: 100%; display: grid;grid-template-columns: 60% 20%;grid-gap:10%;margin-bottom: -50px;">
+        <div class="intro-div">
+          <h1 style="margin-top: 0;">Intro</h1>
+          <p id="intro-data">
+
+          </p>
+
+          <hr style="margin: 0;">
+
+          <h3 class="inline-div" style=" display: inline-block;">
+            Contact:</h3>
+          <p id="contact-data" style=" display: inline-block;"></p>
+          <br />
+          <h3 class="inline-div" style="display: inline-block;">
+            Email:</h3>
+          <p id="email-data" style=" display: inline-block;"></p>
+        </div>
+        <div id="picture">
+          <img id="person" width="200px" height="auto" />
+          <h2 id="name-data">Sana Iqbal</h2>
+          <h4 id="heading">Software Engineer</h3>
+            <a id="linkedin-data" target="_blank"><img id="img-linkedin" src="res/linkedin.png" width="30px"
+                height="30px"></a>
+        </div>
+      </div>
+      <div id="details">
+
+        <div>
+          <h1 style="margin-bottom: 50px;">
+            Work Experience</h1>
+          <div id="workexp"></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="services-div">
+      <h1>Services</h1>
+      <div class="seach-view" id="search-view"
+        style="display: flex; justify-content: flex-start;align-items: center; box-sizing: border-box;border-radius: 5px; padding: 5px; width: 60%;background-color: #adacac; box-sizing: border-box; box-shadow: 5px 5px 5px rgb(205, 205, 207); ">
+        <img id="search-image" src="res/ic_search.png" style="padding: 10px; cursor: pointer;" width="20px"
+          height="20px">
+        <label id="search-label" style="margin-left: 10px; width: 100%;">Search here</label>
+        <input id="search-input"
+          style="display: none; width: 100%; font: 1em sans-serif; border: none; outline: none; background-color: transparent;"
+          type="text">
+      </div>
+      <!-- <div id="search-dropdown" > -->
+
+    </div>
+    <div id="products-container" class="slider">
+      <!-- <div id="1slider" class="slider-bg">
+        <div class="item-options">
+          <button class="remove-btn"><img src="res/ic_delete.png" width="18px" height="18px"></button>
+          <button class="edit-btn"><img src="res/ic_edit.png" width="18px" height="18px"></button>
+        </div>
+        <div id="develop" class="slider-item">
+          <img src="res/ic_develop.png">
+          <h3 class="item-title">DEVELOP</h3>
+        </div>
+      </div>
+
+      <div id="2slider" class="slider-bg">
+        <div class="item-options">
+          <button class="remove-btn"><img src="res/ic_delete.png" width="18px" height="18px"></button>
+          <button class="edit-btn"><img src="res/ic_edit.png" width="18px" height="18px"></button>
+        </div>
+        <div id="test" class="slider-item">
+          <img src="res/ic_test.png">
+          <h3 class="item-title">TEST</h3>
+        </div>
+      </div>
+
+      <div id="3slider" class="slider-bg">
+        <div class="item-options">
+          <button class="remove-btn"><img src="res/ic_delete.png" width="18px" height="18px"></button>
+          <button class="edit-btn"><img src="res/ic_edit.png" width="18px" height="18px"></button>
+        </div>
+        <div id="deploy" class="slider-item">
+          <img src="res/ic_deploy.png">
+          <h3 class="item-title">DEPLOY</h3>
+        </div>
+      </div>
+
+      <div id="4slider" class="slider-bg">
+        <div class="item-options">
+          <button class="remove-btn"><img src="res/ic_delete.png" width="18px" height="18px"></button>
+          <button class="edit-btn"><img src="res/ic_edit.png" width="18px" height="18px"></button>
+        </div>
+        <div id="optimize" class="slider-item">
+          <img src="res/ic_optimize.png">
+          <h3 class="item-title">OPTIMIZE</h3>
+
+        </div>
+      </div> -->
+
+      <div id="add-item-div" class="slider-bg">
+        <div>
+          <img src="res/ic_addItem.png">
+        </div>
+
+        <div style="display: flex; justify-content: center;margin-top: -30px; max-height: 50px;height: 50px;margin-left: auto; margin-right: auto; align-items: stretch;">
+          <button id="add-item" class="add-new-item">ADD NEW SERVICE</button>
+          <div id="loading-add-service" class="spinner-new-item"></div>
+        </div>
+
+      </div>
+    </div>
+    </div>
+
+
+    <div id="skills-div" class="skills-div">
+      <h1>Skills</h1>
+      <div style="width: 84%; display: block;">
+        <div id="skill-items" class="skill-items">
+          <ul id="skill-list">
+          </ul>
+          <div class="add-skill-item">
+            <label id="add-skill-label" class="title-skill">Add new skill here</label>
+            <input id="add-skill-input" class="add-skill" type="text" placeholder="Add Skill" value=""
+              style="display: none; font: 1em sans-serif; border: none; outline: none; background-color: #badacf;">
+
+            <button id="add-skill-btn"><img src="res/ic_add.png" width="30px" height="30px"
+                style="transition: filter 0.3s ease;box-sizing: border-box; padding: 2px;"></button>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="external-data-div">
+      <h1>Information</h1>
+      <table class="info-table" style="width: 70%;">
+        <tr style="height: 50px; width: 100%;">
+          <th class="image-id-cell" style=" background-color: #83817e; color: white;">IMAGE</th>
+          <th class="image-id-cell" style=" background-color: #83817e;  color: white;">ID</th>
+          <th style=" background-color: #83817e; color: white; width: 40%;">TITLE</th>
+          <th style="width: 40%;background-color: #83817e; color: white;">URL</th>
+        </tr>
+      </table>
+      <div class="table-container">
+        <table id="info-table" class="info-table">
+        </table>
+      </div>
+
+    </div>
+
+    <div id="signupModal" class="signup-modal">
+      <div class="modal-content">
+        <h2>Fill your information</h2>
+
+        <form id="submit-form" action="">
+          <section>
+            <input id="name" class="input-field" type="text" placeholder="Name" value="">
+            <input id="email" class="input-field" placeholder="Email" value="">
+            <input id="password" class="input-field" type="password" placeholder="Password (atleast 6 characters)"
+              value="">
+          </section>
+
+          <div
+            style="display: flex; justify-content: center;max-height: 50px;height: 50px; margin-top: 50px; margin-left: auto; margin-right: auto;">
+            <button id="submit" type="submit">SUBMIT</button>
+            <div id="loading" class="spinner"></div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div id="productDesc" class="product-modal">
+      <div id="product-content" class="product-content">
+        <img id="product-img" src="res/ic_develop.png" width="100px" height="100px">
+        <h2 id="product-title" style="margin-top: 30px;">TITLE</h2>
+        <p id="product-description" style="margin-top: 30px;">We are a dedicated and proficient website development
+          service provider, committed to crafting impactful
+          online solutions for businesses across diverse industries.
+          With a team of skilled developers, designers, and digital strategists, we offer comprehensive website
+          development services that transcend mere online presence.<br /><br />
+
+          Our approach begins by understanding your unique business objectives and target audience. Leveraging
+          cutting-edge technologies and industry best practices, we meticulously
+          design and develop websites that are not only visually stunning but also functionally robust. <br /><br />
+
+          From responsive designs that adapt seamlessly to different devices to user-friendly
+          interfaces that enhance engagement, we ensure every element contributes to an exceptional user experience.
+          <br />
+        </p>
+      </div>
+    </div>
+
+    <!-- Edit Form Modal -->
+    <div id="editModal" class="edit-modal">
+      <div class="edit-content">
+        <form id="service-info-form" action="">
+          <section class="input-section">
+            <img id="imagePreview" src="" alt="Selected Image" style="width: 110px; height: 110px;">
+            <input id="edit-img" class="input-field" type="file" value="">
+            <input id="edit-title" class="input-field" class="input-field" type="text" placeholder="Add service title"
+              value="">
+            <textarea id="edit-description" class="input-field"
+              style=" width: 90%; min-height: 120px;height: auto;overflow: auto;white-space: wrap;font-family: 'Figtree', sans-serif;">This is a long piece of text that will wrap inside the textarea element.</textarea>
+            <!-- <button id="submit-edit-info" type="submit">SUBMIT</button> -->
+            <div
+              style="display: flex; justify-content: center;max-height: 50px;height: 50px; margin-top: 50px; margin-left: auto; margin-right: auto;">
+              <button id="submit-edit-info" type="submit">SUBMIT</button>
+              <div id="loading-service-modal" class="spinner"></div>
+            </div>
+          </section>
+        </form>
+      </div>
+    </div>
+
+    <div id="edit-modal-alert">
+      <div id="successModal" class="alert-modal">
+        <img id="alert-icon" src="res/ic_success.png" width="50px" height="50px">
+        <h2 id="alert-message">Data has been sent successfully</h2>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
